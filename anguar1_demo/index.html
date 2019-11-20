@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+  <title>Hello angular JS!!</title>
+  <script src="angular.js"> </script>
+</head>
+
+<body ng-init="hour = 18">
+  <p>The hour is: {{ hour }}</p>
+  <p>The next hour is: {{ hour + 1}}</p>
+  <p ng-if="hour < 12">Good Morning!</p>
+  <p ng-show="hour < 12">Good Morning! ng-show</p>
+  <p ng-if="hour > 16">Good Evening!</p>
+  <p ng-bind="hour + 1">*** will ignore this! ***</p>
+</body>
+
+</html>
